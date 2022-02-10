@@ -1,0 +1,16 @@
+{
+  "name": "Disable Azure portal preview",
+  "version": "1.0",
+  "description": "Always use the released version of the Azure portal.",
+  "permissions": ["webRequest", "webRequestBlocking", "declarativeContent", "*://portal.azure.com/"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "page_action": {
+  },
+  "icons": {
+    "32": "images/azure.png"
+  },
+  "manifest_version": 2
+}
